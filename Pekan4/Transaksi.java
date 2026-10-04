@@ -1,0 +1,23 @@
+package Pekan4;
+
+public class Transaksi {
+	private String idTransaksi;
+	private String jenis;
+	private double nominal;
+	
+	//Constructor
+	public Transaksi(String id, String jenis, double nominal) {
+		this.idTransaksi = id;
+		this.jenis = jenis;
+		this.nominal = nominal;
+	}
+	
+	public String getidTransaksi() {return idTransaksi; }
+	public String getjenis() {return jenis; }
+	public double getnominal() {return nominal; }
+	
+	public void cetakDetail() {
+		System.out.println("ID : " + idTransaksi + "| Jenis : " + jenis + "| Nominal : " + nominal);
+	}
+
+}
